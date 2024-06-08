@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas' Street Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lucas' Street Photography Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to my street photography portfolio. Explore my work and passion for capturing the streets of Nairobi, Kenya.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img id="profilePic" src="profile.jpg" alt="Profile Picture">
+        <p>Hi, I'm Lucas, a street photographer based in Nairobi, Kenya. With a keen eye for detail and a passion for capturing the raw beauty of urban life, I strive to freeze fleeting moments and create timeless memories through my lens. Join me as I explore the vibrant streets, capturing stories one frame at a time.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="slideshow-container" id="imageContainer">
+            <!-- Images will be injected here by JavaScript -->
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <input type="file" id="imageUpload" accept="image/*" multiple>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lucas' Street Photography Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
